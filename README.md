@@ -1,20 +1,20 @@
-Forms 🐦
-A simple Twitter-like application built with Django, allowing users to register with filtered usernames and post tweets with images.
+Forms 
+-A simple Twitter-like application built with Django, allowing users to register with filtered usernames and post tweets with images.
 
-Features ✨
-User Registration: Create new user accounts.
+Features
+-User Registration: Create new user accounts.
 
-Username Filtering: Prohibits specific words (shit, fuck, bobo) in usernames during registration.
+-Username Filtering: Prohibits specific words (shit, fuck, bobo) in usernames during registration.
 
-Tweet Posting: Users can post short text messages (tweets).
+-Tweet Posting: Users can post short text messages (tweets).
 
-Image Uploads: Attach images to tweets.
+-Image Uploads: Attach images to tweets.
 
-Basic Feed: Displays recent tweets.
+-Basic Feed: Displays recent tweets.
 
-Responsive Design: Utilizes Tailwind CSS for a mobile-friendly interface.
+-Responsive Design: Utilizes Tailwind CSS for a mobile-friendly interface.
 
-Prerequisites 📋
+Prerequisites 
 Before you begin, ensure you have the following installed on your system:
 
 Python 3.8+: Download Python
@@ -23,16 +23,16 @@ pip: Python's package installer (usually comes with Python).
 
 Git: Download Git
 
-Getting Started 🚀
+Getting Started 
 Follow these steps to get your Django project up and running on your local machine.
 
-1. Clone the Repository ⬇️
+1. Clone the Repository 
 Open your terminal or command prompt and run the following command to clone the project:
 
 git clone <repository_url> # Replace <repository_url> with the actual URL of your repository
 cd Forms
 
-2. Create and Activate a Virtual Environment 🐍
+2. Create and Activate a Virtual Environment 
 It's highly recommended to use a virtual environment to manage your project's dependencies. This keeps your project isolated from other Python projects.
 
 # Create a virtual environment
@@ -44,33 +44,33 @@ source venv/bin/activate
 # On Windows:
 venv\Scripts\activate
 
-3. Install Dependencies 📦
+3. Install Dependencies 
 With your virtual environment activated, install all the required Python packages using pip:
 
 pip install -r requirements.txt
 
-4. Apply Database Migrations 💾
+4. Apply Database Migrations 
 Django uses migrations to define and evolve your database schema.
 
 python manage.py makemigrations Accounts Tweets
 python manage.py migrate
 
-5. Create a Superuser (Optional but Recommended) 👤
+5. Create a Superuser (Optional but Recommended) 
 To access the Django admin panel and manage users/tweets, create a superuser:
 
 python manage.py createsuperuser
 
 Follow the prompts to set a username, email, and password.
 
-6. Run the Development Server ▶️
+6. Run the Development Server 
 Start the Django development server:
 
 python manage.py runserver
 
 You can now access the application in your web browser at http://127.0.0.1:8000/.
 
-How to Use 📖
-Registering an Account 📝
+How to Use 
+Registering an Account 
 Navigate to http://127.0.0.1:8000/Accounts/register/ or click the "Register" link on the homepage.
 
 Fill in your desired username and password.
@@ -79,7 +79,7 @@ Username Filtering: Try to use shit, fuck, or bobo (case-insensitive) in your us
 
 Submit the form. If registration is successful, you will be automatically logged in and redirected to the "Post a Tweet" page.
 
-Posting a Tweet with an Image 📸
+Posting a Tweet with an Image 
 Ensure you are logged in. If not, go to http://127.0.0.1:8000/Accounts/login/ and log in with your registered account.
 
 Navigate to http://127.0.0.1:8000/Tweets/post/ or click the "Post Tweet" link.
@@ -92,7 +92,7 @@ Click the "Tweet" button to post your tweet.
 
 Your tweet will appear on the same page under "Recent Tweets" and also on the home page (http://127.00.1:8000/).
 
-Project Structure 📁
+Project Structure 
 Forms/: The main Django project directory.
 
 Forms/settings.py: Project settings, including INSTALLED_APPS, MEDIA_ROOT, MEDIA_URL.
@@ -135,7 +135,7 @@ requirements.txt: Lists all project dependencies.
 
 manage.py: Django's command-line utility.
 
-Deployment Notes ☁️
+Deployment Notes 
 For production deployment, ensure you change DEBUG = True to DEBUG = False in settings.py.
 
 Configure ALLOWED_HOSTS in settings.py for your production domain.
@@ -144,7 +144,7 @@ Set up a proper web server (e.g., Gunicorn, Nginx, Apache) to serve your Django 
 
 Use a more robust database (e.g., PostgreSQL, MySQL) instead of SQLite.
 
-Contributing 🤝
+Contributing 
 Feel free to fork this repository, open issues, or submit pull requests.
 
 License 📄
