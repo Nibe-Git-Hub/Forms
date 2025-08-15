@@ -1,4 +1,4 @@
-Forms 
+# Forms 
 -A simple Twitter-like application built with Django, allowing users to register with filtered usernames and post tweets with images.
 
 Features
@@ -147,7 +147,7 @@ Use a more robust database (e.g., PostgreSQL, MySQL) instead of SQLite.
 Contributing 
 Feel free to fork this repository, open issues, or submit pull requests.
 
-License 📄
+License 
 This project is licensed under the MIT License - see the LICENSE file for details (not included in this example but good practice for real projects).
 
-Enjoy your Forms experience! 🎉
+Enjoy your Forms experience! 
